@@ -152,6 +152,18 @@ $ cd /etc/nginx/conf.d
 $ nginx reload
 ```
 
+## PageSpeed Support
+
+Compile nginx with PageSpeed support following [this guide](https://www.linode.com/docs/web-servers/nginx/build-nginx-with-pagespeed-from-source/).
+
+While the guide may mention using their "recommended starting point" for
+configuration, you can keep your current configuration by copying and pasting
+the configure arguments from `nginx -V`.
+
+This option might require more dependencies based on your current OS, but
+makes integrating PageSpeed (and using the latest nginx) with any existing
+`conf.d` configurations much easier.
+
 
 ## Support
 
