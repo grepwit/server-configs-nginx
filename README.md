@@ -153,14 +153,16 @@ $ nginx reload
 ```
 ## ModSecurity
 
-To compile ModSecurity support with nginx, follow [this guide](https://www.nginx.com/blog/compiling-and-installing-modsecurity-for-open-source-nginx/).
+To compile ModSecurity support with nginx, follow [this guide](https://www.nginx.com/blog/compiling-and-installing-modsecurity-for-open-source-nginx/)
+or use one of these [recipes](https://github.com/SpiderLabs/ModSecurity/wiki/Compilation-recipes-for-v3.x).
 
 Afterward, download the latest OWASP Core Rule Set and enable ModSecurity with
 `bash get-owasp-crs.sh`. This command can also be used to checkout to the
 latest changes on the current branch.
 
-To compile nginx with PageSpeed as well, follow the guide above until *STEP 4*
-and then continue with the guide below. When it becomes time to configure, add
+To compile nginx with PageSpeed as well, follow the guide above until right
+before the step to build nginx and then continue with the guide below. When
+it becomes time to configure, add
 `--add-module=your/path/to/ModSecurity-nginx`.
 
 
