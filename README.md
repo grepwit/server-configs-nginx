@@ -121,7 +121,7 @@ To use directly, replace the Nginx config directory with this repository. for ex
 nginx stop
 cd /etc
 mv nginx nginx-previous
-git clone https://github.com/h5bp/server-configs-nginx.git nginx
+git clone https://github.com/grepwit/server-configs-nginx.git nginx
 # install-specific edits
 nginx start
 ```
